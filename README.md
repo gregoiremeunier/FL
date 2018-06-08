@@ -1,6 +1,8 @@
- which could read the input source in assembler for abstract machine used in oeprational semantics and output will be lexical and syntax analysis, i.e. splitting the input string into instructions and checking theit syntax.
+C program which could read the input source in assembler for abstract machine used in operational semantics and output will be lexical and syntax analysis, i.e. splitting the input string into instructions and checking their syntax
+INPUT : assembler
+OUTPUT : 
 
- 
+
 - page 64 (page 74 in pdf) - here you can see a syntax of ca. 14 instructions, this is complete language, nothing more
 
 Example of input:
