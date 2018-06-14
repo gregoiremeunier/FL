@@ -21,15 +21,6 @@ char** str_split(char* a_str, const char a_delim)
     // Count how many elements will be extracted
     while (*tmp)
     {
-    	//BEGIN MODIF - do not look inside ()
-    	while (*tmp == "(")
-    	{
-    		while(*tmp != ")")
-	    	{
-	    		tmp++;
-	    	}
-    	}
-    	//END - do not look inside ()
         if (a_delim == *tmp)
         {
             count++;
@@ -86,11 +77,16 @@ int parseInstr() //Instr = Atom | LOOP(Prog, Prog) | BRANCH(Prog, Prog)
 int parseProg(char assembleur[100]) //Prog = (Intsr)*
 {
 	//séparer le code avec le ":" hors des "()" et le rentrer dans un tableau
-	char**tokens;
-	while(assembleur!="(")
+	//char**tokens;
+	/*while(assembleur!="(")
 	{
-		tokens = str_split(assembleur,":");
-	}
+		//tokens = str_split(assembleur,":");
+		
+	}*/
+	char* tokens = str_split(assembleur, ":");
+	printf("assembleur=[%s]\n\n", assembleur);
+	printf("tokens=[%s]\n", *(tokens));
+	printf("tokens=[%s]\n", *(tokens + 1));
 
 
 	return 0;
