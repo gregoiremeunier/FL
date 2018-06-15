@@ -1,3 +1,8 @@
+TO RUN :
+- open a terminal
+- "gcc -Wall -Wextra compil.c -o compil.exe"
+- "./compil.exe"
+
 C program which could read the input source in assembler for abstract machine used in operational semantics and output will be lexical and syntax analysis, i.e. splitting the input string into instructions and checking their syntax
 INPUT : assembler
 OUTPUT : language model
